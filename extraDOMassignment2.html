@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>question 2</title>
+</head>
+
+<body>
+    <input type="text" id="first" onkeyup=""="">
+    <input type="text" id="second" onkeyup=""="">
+    <input type="button" value="Transfer" id="button" name="">
+    <script type="text/javascript">
+    var _id = function _id(id) {
+        return document['getElementById'](id)
+    }
+    var first = _id('first');
+    var second = _id('second');
+    var button = _id('button');
+    button['addEventListener']('click', function() {
+        second['value'] = first['value'];
+        first['value'] = "";
+    });
+    </script>
+</body>
+
+</html>
